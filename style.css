@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  background: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)), url('eduford_img/banner.png');
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  text-align: center;
+}
+.nav {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.nav img {
+  width: 150px;
+  height: 38px;
+}
+.nav .list a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  position: relative;
+  width: 100px;
+}
+.nav .list a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #a83206;
+  bottom: -4px;
+  left: 0;
+  position: absolute;
+  transition: 0.5s;
+}
+.nav .list a:hover::after {
+  width: 100%;
+}
+.home-text {
+  /* margin-left: 40%; */
+  margin-top: 8%;
+}
+.home-text h1 {
+  font-size: 70px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.home-text p {
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.home-text button {
+  width: 230px;
+  height: 45px;
+  /* background: rgba(0, 0, 0, 0); */
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  position: relative;
+  transition: 0.5s;
+}
+.home-text button:hover {
+  background: #a83206;
+  border: 1px solid #a83206;
+}
+
+.home-text button::after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  right: -20px;
+}
+.home-text button:hover::after,
+.home-text button:hover::before {
+  background: #a83206;
+}
+.home-text button::before {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+}
