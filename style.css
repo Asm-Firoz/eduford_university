@@ -19,6 +19,7 @@
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
+  position: relative;
 }
 .nav img {
   width: 150px;
@@ -99,7 +100,16 @@
   .nav .list {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 15px;
+    position: absolute;
+    top: 0;
+    right: -70px;
+    background: #a83206;
+    width: 200px;
+    height: 100vh;
+   align-items: center;
+   padding-top: 30px;
+  
   }
   .home-text h1 {
     font-size: 30px;
